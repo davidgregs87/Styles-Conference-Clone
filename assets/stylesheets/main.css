@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
+address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,
+section,summary,time,mark,audio,video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+=================================================================================
+Grid 
+=================================================================================
+*/
+
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box; /* Here we select all universal selector(*), psuedo-elements to make
+                most browsers like chrome,safari and mozilla accept box-sizing as border box */
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container{
+    width: 960;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+====================================================================================
+Topography(layout)
+====================================================================================
+*/
+h1,h3,h4,h5,p,nav,a{
+    margin-bottom: 22px;
+}
+.btn{
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+.btn-alt{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+.btn-alt:hover{
+    background: #fff;
+    color: #648880;
+}
+.hero{
+    padding: 22px 80px 66px 80px;
+}
+.logo{
+    float: left;
+    padding: 40px 0 22px 0;
+    border-top: 4px solid #648880;
+    font-size: 48px;
+    line-height: 44px;
+    text-align: left;
+}
+.primary-footer small{
+    float: left;
+}
+.primary-footer{
+    padding-bottom: 44px;
+    padding-top: 0px;
+    margin-top: 44px;
+    text-align: center;
+}
+.col-1-3{
+    width: 33.33%;
+}
+.col-2-3{
+    width: 66.66%;
+}
+.col-1-3,
+.col-2-3{
+    display: inline-block;
+    vertical-align: top;
+}
+.grid,
+.col-1-3,
+.col-2-3{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container,
+.grid{
+    margin: 0 auto;
+    width: 960px;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    width: 100%
+
+}
+.upper{
+    float: right;
+    margin-top: 20px;
+}
+.move-up{
+    float: right;
+    padding-bottom: 5px;
+}
+
+/*
+====================================================================================
+ClearFix
+====================================================================================
+*/
+.group::before,
+.group::after{
+    content: "";
+    display: table;
+}
+.group::after{
+    clear: both;
+}
+.group{
+    clear: both;
+    *zoom: 1;
+}
+
+/*
+======================================================================================
+Custom Styles(Typography)
+======================================================================================
+*/
+body{
+    background: #293f50;
+    color: #888;
+    font:300 16px/22px "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+h1,h2,h3,a{
+    color: #648880;
+}
+h1{
+    font-size: 36px;
+    line-height: 44px;
+}
+h2{
+    font-size: 24px;
+    line-height: 44px;
+}
+h3{
+    font-size: 21px;
+}
+h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #a9b2b9;
+    text-transform: uppercase;
+}
+p{
+    font-size: 24;
+}
+strong{
+    font-weight: 400;
+}
+cite,em{
+    font-style: italic;
+}
+a:hover{
+    color: #a9b2b9;
+}
+.tagline{
+    margin: 66px 0 22px 0;
+}
+.primary-nav{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.teasers:hover{
+    color: #a9b2b9;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-right{
+    text-align: right;
+}
+.white{
+    color: #fff;
+}
+
+/*
+================================================================================
+Rows
+================================================================================
+*/
+.rows{
+    background-color: #fff;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+}
+.rows,
+.rows-alt{
+    min-width: 960px;
+}
+.rows-alt{
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 44px 0 22px 0;
+}
+.shift{
+    margin-right: 20px;
+}
